@@ -8,4 +8,4 @@ The terminal component will give you the last entered command to execute it your
 
 Here is how it can look like :)
 
-![sample](./sample.png)
+![sample](https://raw.githubusercontent.com/farhadnowzari/vue-nerdy-terminal/main/assets/sample.png)
