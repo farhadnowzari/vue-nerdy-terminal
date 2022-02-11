@@ -1,24 +1,11 @@
-# nerdy-terminal
+# VueNerdyTerminal
 
-## Project setup
-```
-npm install
-```
+Who doesn't need a nice terminal on the browser based on the most popular frontend framework? ;) 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This component will let you have a terminal command line on your webpage. This doesn't support any commands but `clear`.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+The terminal component will give you the last entered command to execute it your self and with `writeLine`, append the result into the console.
 
-### Lints and fixes files
-```
-npm run lint
-```
+Here is how it can look like :)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![sample](./sample.png)
