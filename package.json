@@ -1,12 +1,16 @@
 {
   "author": "Farhad Nowzari",
   "name": "vue-nerdy-terminal",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "dist/VueNerdyTerminal.umd.js",
   "files": [
     "dist/*",
     "src/types/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhadnowzari/vue-nerdy-terminal.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name VueNerdyTerminal ./src/index.ts && vue-cli-service lint --fix",
