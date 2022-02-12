@@ -1,11 +1,16 @@
 <template>
     <div class="command-line">
-        <span @click="$refs.commandRef.focus()" class="prefix">{{ value.commandPrefix }}</span>
+        <span 
+            @click="$refs.commandRef.focus()" 
+            class="prefix"
+            v-if="value.commandPrefix">{{ value.commandPrefix }}</span>
         <div 
             @keypress.enter="onExecute($event)"
             :contenteditable="!value.archived"
             ref="commandRef"
-            class="command"></div>
+            class="command">
+            <span v-if="value.justResult" v-html="value.command"></span>    
+        </div>
     </div>
 </template>
 

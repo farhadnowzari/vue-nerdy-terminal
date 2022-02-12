@@ -1,5 +1,17 @@
 import Vue from 'vue';
-import CommandLine from '../models/CommandLine';
+
+declare class CommandLine {
+    rootPath: string | null;
+    command: string | null;
+
+    archived: boolean;
+    justResult: boolean;
+
+    commandPrefix: string | null;
+
+    static init(rootPath: string): CommandLine;
+    static log(text: string): CommandLine;
+}
 
 declare class NerdyTerminal extends Vue {
     newLine(): void;
