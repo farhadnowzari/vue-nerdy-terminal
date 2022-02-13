@@ -12,7 +12,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 import NerdyTerminal from './components/NerdyTerminal.vue';
 import CommandLine from './models/CommandLine';
-
+import SampleGenericCommand from '@/samples/SampleGenericCommand';
 @Component({
   components: {
     NerdyTerminal,
@@ -25,6 +25,9 @@ export default class App extends Vue {
   execute(cmd: CommandLine): void {
     if(cmd.command === 'test')
       this.$refs.terminalRef.writeLine(CommandLine.log('<font color="red">wtf!</font>'));
+    if(cmd.command === 'help') {
+      this.$refs.terminalRef.writeLine(SampleGenericCommand.sampleHelp());
+    }
     this.$refs.terminalRef.newLine();
   }
 }

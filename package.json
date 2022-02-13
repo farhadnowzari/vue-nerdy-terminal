@@ -2,6 +2,9 @@
   "author": "Farhad Nowzari",
   "name": "vue-nerdy-terminal",
   "version": "0.1.8",
+  "keywords": [
+    "terminal", "vue", "nerdy", "advanced", "easy-terminal"
+  ],
   "main": "dist/VueNerdyTerminal.umd.js",
   "files": [
     "dist/*",
